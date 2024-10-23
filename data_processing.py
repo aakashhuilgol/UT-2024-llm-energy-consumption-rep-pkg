@@ -13,6 +13,7 @@ class AlpacaDatasetProcessor:
         print("Loading the Alpaca dataset...")
         self.dataset = load_dataset(self.dataset_name)
         print("Dataset loaded.")
+        random.seed(10)
 
     def get_prompts(self):
         """

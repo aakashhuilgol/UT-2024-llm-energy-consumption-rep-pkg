@@ -4,9 +4,9 @@ import time
 from tqdm import tqdm
 
 class PowerMetricsTracker:
-    def __init__(self):
+    def __init__(self, idle_duration):
         self.powermetrics_process = None
-        self.idle_duration = 1 # put at 60 for experiments
+        self.idle_duration = idle_duration # put at 60 for experiments
 
     def run_powermetrics(self, output):
         """
@@ -37,5 +37,5 @@ class PowerMetricsTracker:
         Args:
             duration (int): Duration to track in seconds.
         """
-        for _ in tqdm(range(duration), desc="Waiting", unit="s"):
+        for _ in tqdm(range(duration), desc="Idle State", unit="s"):
             time.sleep(1)
