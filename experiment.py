@@ -25,10 +25,10 @@ def main(model_name, max_new_tokens, input_range, nr_samples, idle_duration):
     model = LLM(model_name=model_name, access_token=token_secret) 
 
     if max_new_tokens!=None: range_gen_tokens=[max_new_tokens]
-    else: range_gen_tokens=[50,100,200]
+    else: range_gen_tokens=[100,200]
     for max_gen_tokens in range_gen_tokens:
-        if input_range[1] == 60: output = 'logs/'+model_name+str(max_gen_tokens)+'-short.txt'
-        else: output = 'logs/'+model_name+str(max_gen_tokens)+'-long.txt'
+        if input_range[1] == 60: output = 'logs/'+model_name+'-'+str(max_gen_tokens)+'-short.txt'
+        else: output = 'logs/'+model_name+'-'+str(max_gen_tokens)+'-long.txt'
         
         # Track power metrics and generate text for all sampled prompts
         tracker.run_powermetrics(output=output)
