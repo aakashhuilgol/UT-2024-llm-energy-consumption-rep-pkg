@@ -30,14 +30,14 @@ Command-Line Arguments:
 --------
 
 
-# Energy Consumption of Large Language Models and the impact of maximizing prompt and output lengt
+# Energy Consumption of Large Language Models and the impact of maximizing prompt and output length
 This repository is a companion page for the following paper:
 > Sanne Eeckhout, Aakash Huilgol. 2024. Energy Consumption of Large Language Models and the impact of maximizing prompt and output length. University Twente.
 
 It contains all the material required for replicating the study, including: loading and using OPT, BLOOM and FLAN-T5 for inference using the Alpca Dataset, tracking energy consumption using powermetrics, and parsing the powermetrics logs.
 
 ## How to cite us
-The scientific article describing design, execution, and main results of this study is available [here](https://www.google.com).<br> 
+The scientific article describing design, execution, and main results of this study is available [here](https://github.com/aakashhuilgol/UT-2024-llm-energy-consumption-rep-pkg/blob/main/original_paper.pdf).<br> 
 If this study is helping your research, consider to cite it is as follows, thanks!
 
 ```
